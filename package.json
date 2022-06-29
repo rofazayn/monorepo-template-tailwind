@@ -1,6 +1,12 @@
 {
-  "name": "auresx",
+  "name": "monorepo-template",
   "version": "0.0.0",
+  "author": {
+    "name": "Abderraouf Zine",
+    "email": "rofazayn@gmail.com",
+    "url": "https://rofazayn.com"
+  },
+  "license": "MIT",
   "private": true,
   "workspaces": [
     "apps/*",

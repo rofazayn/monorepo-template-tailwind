@@ -2,6 +2,6 @@ const base = require('../../jest.config')
 
 module.exports = {
   ...base,
-  name: 'next-app',
-  displayName: 'Next-app Tests',
+  name: 'web',
+  displayName: 'Web NextJS Tests',
 }
