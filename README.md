@@ -1,6 +1,6 @@
-# Turborepo starter
+# Monorepo Template
 
-This is an official Yarn v1 starter turborepo.
+This is an unofficial Yarn v1 starter turborepo.
 
 ## What's inside?
 
@@ -8,11 +8,11 @@ This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package ma
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
 - `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `server`: a Node.js [Express](https://expressjs.com) app
+- `config`: configurations (includes Eslint and Jest configs)
+- `tsconfig`: TypeScript configurations used throughout the monorepo
+- `ui`: a React component library optimized with TailwindCSS and can be shared between apps
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
@@ -27,14 +27,13 @@ This turborepo has some additional tools already setup for you:
 
 ## Setup
 
-This repository is used in the `npx create-turbo` command, and selected when choosing which package manager you wish to use with your monorepo (Yarn).
+Clone the repo `git clone git@github.com/rofazayn/monorepo-template.git` then cc into the repo and run `yarn install`
 
 ### Build
 
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 yarn run build
 ```
 
@@ -43,7 +42,6 @@ yarn run build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 yarn run dev
 ```
 
@@ -54,7 +52,6 @@ Turborepo can use a technique known as [Remote Caching (Beta)](https://turborepo
 By default, Turborepo will cache locally. To enable Remote Caching (Beta) you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
 ```
-cd my-turborepo
 npx turbo login
 ```
 
